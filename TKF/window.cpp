@@ -52,7 +52,7 @@ namespace TKF
 
 		Window::~Window()
 		{
-
+			glfwTerminate();
 		}
 	}
 }
