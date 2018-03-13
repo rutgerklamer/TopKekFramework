@@ -65,14 +65,14 @@ add_library(TKF
 	
 	
 )
-file(
-	COPY ${CMAKE_SOURCE_DIR}/TKF/shaders
-	DESTINATION ${CMAKE_BINARY_DIR}
-)
-file(
-	COPY ${CMAKE_SOURCE_DIR}/TKF/fonts
-	DESTINATION ${CMAKE_BINARY_DIR}
-)
+#file(
+#	COPY ${CMAKE_SOURCE_DIR}/TKF/shaders
+#	DESTINATION ${CMAKE_BINARY_DIR}
+#)
+#file(
+#	COPY ${CMAKE_SOURCE_DIR}/TKF/fonts
+#	DESTINATION ${CMAKE_BINARY_DIR}
+#)
 
 ####################################################################
 # demo               	                                          #
@@ -85,8 +85,8 @@ IF(MAKE_DEMO)
 		${ALL_GRAPHICS_LIBS}
 	)
 	# Copy assets to the build directory
-	file(
-		COPY DEMO/assets
-		DESTINATION ${CMAKE_BINARY_DIR}
-	)
+	#file(
+	#	COPY DEMO/assets
+	#	DESTINATION ${CMAKE_BINARY_DIR}
+	#)
 ENDIF()
