@@ -17,7 +17,7 @@ int main()
 	} while(glfwGetKey(window->GetWindow(), GLFW_KEY_ESCAPE) != GLFW_PRESS &&
 			glfwWindowShouldClose(window->GetWindow()) == 0);
 	
-	glfwTerminate();
+	delete window;
 
 	return 0;
 }
