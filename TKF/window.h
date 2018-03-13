@@ -12,7 +12,7 @@ namespace TKF
 {
 	namespace Graphics
 	{
-		/// 
+		///@brief the Window class makes a nice little window.
 		class Window
 		{
 		public:
@@ -21,9 +21,12 @@ namespace TKF
 			///@brief Destructor
 			~Window();
 
+			///@brief Gets the GLFWwindow
+			///@return m_Window the current window
 			GLFWwindow* GetWindow() { return m_Window; }
 
 		private:
+			///@brief Current window
 			GLFWwindow * m_Window;
 		};
 	}
